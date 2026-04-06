@@ -1,8 +1,6 @@
 name: AnyRouter 自动签到
 on:
-  schedule:
-    - cron: '0 */6 * * *'
-  workflow_dispatch:
+  workflow_dispatch:  # 仅保留手动触发，已删除定时任务
 
 jobs:
   checkin:
